@@ -1,0 +1,445 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background: #333;
+	color: #fff;
+	line-height:1.6;
+	height: 100vh;
+	overflow: hidden;
+
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	/*css smooth scroll properties*/
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+}
+
+.navbar{
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	width: 100%;
+	height: 60px;
+	background: rgba(0,0,00.7);
+}
+
+.navbar ul{
+	display: flex;
+	list-style: none;
+	width: 100%;
+	justify-content: center;
+}
+
+.navbar ul li{
+	margin: 0 1rem;
+	padding: 1rem;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #f4f4f4;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 20px;
+
+}
+
+.navbar ul li a:hover{
+	color: #0C8FC7;
+}
+
+/*SECTIONS*/
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	height: 100vh;
+	scroll-snap-align: center;
+
+}
+
+section h1{
+	font-size: 4rem;	
+
+}
+
+section p{
+	font size: 1.5rem;
+	font-family: 'Titillium Web', sans-serif;
+
+}
+
+/*---------------------HOME SECTION-----------------------*/
+
+section#Home{
+	background: #000000;
+}
+
+section#Home h1{
+	text-transform: uppercase;
+	font-family: 'Titillium Web', sans-serif;
+
+}
+
+
+section#Home p{
+	padding: 1em;
+	margin: 0 -1em;
+	border: white solid 0.01rem;
+	font-family: 'Titillium Web', sans-serif;
+
+}
+/*--------------RESPONSIENESS--------------*/
+@media screen and (max-width: 2000px){
+    .content{
+        flex-direction: column;
+    }
+    .welcome-text{
+        text-align: center;
+    }
+}
+
+/*-----------------ICONS-----------------------------*/
+body {
+    background-color: #d8d8d8;
+}
+
+.social-menu ul {
+    position: relative;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background-color: #e4405f;
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
+}
+
+/*---------------PROFILE SECTION---------------*/
+
+section#Profile h1{
+	text-transform: uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	
+}
+
+.pro{
+	position: relative;
+	top: 470px;
+	right: -45px;
+}
+
+section#Profile{
+	background: #DE632A;
+}	
+
+	
+section#Profile img{
+	height: 500px;
+	
+}
+
+.picture{
+	position: relative;
+	top: 295px;
+	right: 250px;
+}
+.description{
+	position: relative;
+	bottom: 10px;
+	right: 100px;
+	margin-left: 500px;
+	padding-bottom: 500px;
+	text-align: left;
+}
+
+
+/*----------------EDUCATION SECTION-----------------*/
+
+section#Education{
+	background: #DE632A;
+}
+
+section#Education h1{
+	text-transform: uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	
+}
+
+.edu{
+	position: relative;
+	top: 55px;
+}
+section#Education img{
+	height: 300px;
+	
+}
+
+section#Education p{
+	padding-bottom: -5px;
+}
+
+.b_logo{
+	position: relative;
+	top: 20px;
+	left: 170px;
+}
+
+.ib_logo{
+	position: relative;
+	top: 168px;
+	left: -90px;
+}
+
+
+section#Education .ib_logo{
+	position: relative;
+	height: 210px;
+}
+
+.uc_logo{
+	position: relative;
+	top: 20px;
+	right: 170px;
+}
+
+.bsit{
+	position: relative;
+	top: -45px;
+	left: 100px;
+	opacity: 0.80;
+}
+
+section#Education .bsit{
+	position: relative;
+	height: 175px;
+}
+
+/*---------------------SKILLS SECTION------------------------*/
+section#Skills{
+	background: #DE632A;
+}
+
+section#Skills h1{
+	text-transform: uppercase;
+	font-family: 'Titillium Web', sans-serif;
+	
+}
+
+.skil{
+	position: relative;
+	bottom: 20px;
+}
+
+
+.desc_skills{
+	display: grid;
+	height: 5rem%;
+	place-items: center;
+	background: #0C8FC7;
+
+}
+
+.skills-bar{
+	font-family: 'Titillium Web', sans-serif;
+	text-align: left;
+	background: rgba(0,0,00.7);
+	width: 600px;
+	border-radius: 10px;
+	padding:25px 30px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.6)
+
+}
+
+.skills-bar .bar{
+	margin: 20px 0;
+}
+
+.skills-bar .bar:first-child{
+	margin-top: 0px;
+}
+
+.skills-bar .bar .info span{
+	font-size: 17px;
+	font-weight: 500px;
+	opacity: 0;
+	animation: showText 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText{
+	100%{
+		opacity: 1;
+	}
+}
+
+.skills-bar .bar .progress-line{
+	position: relative;
+	height: 10px;
+	width: 100%;
+	background: #f0f0f0;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left; 
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+						0px 1px rgba(255,255,255,0.8),;
+	animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
+}
+.bar .progress-line span{
+	height: 100%;
+	width: 80%;
+	background: #0C8FC7;
+	position: absolute;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left;
+	animation: animate 1s 1s cubic-bezier(1,0,0.5,1)forwards;
+}
+
+@keyframes animate{
+	100%{
+		transform: scaleX(1);
+	}
+}
+.progress-line.html span{
+	width: 90%;
+
+}
+
+.progress-line.css span{
+	width: 80%;
+
+}
+.progress-line.photoshop span{
+	width: 75%;
+
+}
+.progress-line.java span{
+	width: 30%;
+
+}
+
+.bar .progress-line span::before{
+	position: absolute;
+	content: "";
+	right: 0;
+	top: -10px;
+	height: 0;
+	width: 0;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-top-color:  #DE632A;
+	animation: showText2 0.5s 1.5s linear forwards;
+
+}
+.bar .progress-line span::after{
+	position: absolute;
+	right: 0;
+	top: -28px; 
+	color: #FFFF;
+	font-size: 12px;
+	font-weight: 500;
+	background: #DE632A;
+	padding: 1px 8px;
+	border-radius: 3px;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2{
+	100%{
+		opacity: 1;
+	}
+}
+
+.progress-line.html span::after{
+	content: "90%";
+
+}
+
+.progress-line.css span::after{
+	content: "80%";
+
+}
+.progress-line.photoshop span::after{
+	content: "75%";
+
+}
+.progress-line.java span::after{
+	content: "30%";
+
+}
+
+/*----------------------REFERENCE SECTION-------------------------*/
+
+section#Reference{
+	font-family: 'Titillium Web', sans-serif;
+}
+
+section#Reference img{
+	height: 250px;
+	
+}
+section#Reference{
+	background: #DE632A;
+}	
+.ref{
+	font-family: 'Titillium Web', sans-serif;
+
+}
+
+
+
+
